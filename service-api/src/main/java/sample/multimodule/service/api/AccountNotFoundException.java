@@ -8,4 +8,3 @@ public class AccountNotFoundException extends RuntimeException {
         super("No such account with id: " + accountId);
     }
 }
-

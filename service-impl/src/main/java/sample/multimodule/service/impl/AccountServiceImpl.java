@@ -30,7 +30,7 @@ public class AccountServiceImpl implements AccountService {
      */
     @Override
     public Account findOne(String number) throws AccountNotFoundException {
-        if(number.equals("0000")) {
+        if("0000".equals(number)) {
             throw new AccountNotFoundException("0000");
         }
         
